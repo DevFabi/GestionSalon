@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrestationEncaissementController">
+   <children>
+      <AnchorPane fx:id="AnchorPane_Encaissement" layoutX="-6.0" layoutY="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #293847;">
+         <children>
+            <Pane layoutX="78.0" layoutY="78.0" prefHeight="444.0" prefWidth="795.0" style="-fx-background-color: #293847; -fx-border-color: #7BE6E7;">
+               <children>
+                  <Button fx:id="valider" layoutX="328.0" layoutY="377.0" mnemonicParsing="false" onAction="#valider" prefHeight="50.0" prefWidth="167.0" style="-fx-background-color: #7BE6E7;" text="Valider">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="28.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="310.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encaissement" wrappingWidth="202.13671875">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="39.0" />
+                     </font>
+                  </Text>
+                  
+                  <ComboBox fx:id="client" layoutX="272.0" layoutY="114.0" onAction="#CbClient" prefHeight="45.0" prefWidth="280.0" promptText="Client" style="-fx-background-color: #7BE6E7;">
+
+                  </ComboBox>
+                  
+                  <ComboBox fx:id="coiffeur" layoutX="271.0" layoutY="179.0" onAction="#CbCoiffeur" prefHeight="45.0" prefWidth="280.0" promptText="Coiffeur" style="-fx-background-color: #7BE6E7;">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ComboBox>
+                  <ComboBox fx:id="prestation" layoutX="272.0" layoutY="241.0" onAction="#CbPrestation" prefHeight="45.0" prefWidth="280.0" promptText="Prestation" style="-fx-background-color: #7BE6E7;">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </Pane>
+            <Button fx:id="bt_accueil" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #7BE6E7;" text="Accueil">
+               <font>
+                  <Font name="Champagne &amp; Limousines" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

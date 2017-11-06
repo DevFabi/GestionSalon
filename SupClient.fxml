@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupClientController">
+   <children>
+      <AnchorPane fx:id="AnchorPane_Clients" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #293847;">
+         <children>
+            <Text fill="WHITE" layoutX="480.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients">
+               <font>
+                  <Font name="Champagne &amp; Limousines" size="76.0" />
+               </font>
+            </Text>
+            <Button fx:id="bt_AccueilClient" layoutX="14.0" layoutY="159.0" mnemonicParsing="false" onAction="#goBack" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #ECB771;" text="Accueil" textFill="WHITE">
+               <font>
+                  <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_CreationClient" layoutX="14.0" layoutY="276.0" mnemonicParsing="false" onAction="#goCreationClients" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #ECB771;" text="Création" textFill="WHITE">
+               <font>
+                  <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_SuppressionClient" layoutX="14.0" layoutY="392.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #F2CFA0;" text="Suppression" textFill="WHITE">
+               <font>
+                  <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="supprimer" layoutX="818.0" layoutY="556.0" mnemonicParsing="false" onAction="#supprimer" style="-fx-background-color: #ECB771;" text="Supprimer">
+               <font>
+                  <Font name="Champagne &amp; Limousines" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="search" layoutX="284.0" layoutY="123.0" mnemonicParsing="false" onAction="#searchUser" style="-fx-background-color: #ECB771;" text="Rechercher">
+               <font>
+                  <Font name="Champagne &amp; Limousines" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableClients" layoutX="284.0" layoutY="165.0" prefHeight="386.0" prefWidth="618.0" style="-fx-background-color: #ECB771;">
+         <columns>
+            <TableColumn fx:id="nomColumn" prefWidth="155.0" style="-fx-background-color: white;" text="Nom" />
+            <TableColumn fx:id="prenomColumn" prefWidth="182.0" style="-fx-background-color: white;" text="Prenom" />
+            <TableColumn fx:id="ageColumn" prefWidth="62.0" style="-fx-background-color: white;" text="Age" />
+            <TableColumn fx:id="emailColumn" prefWidth="218.0" style="-fx-background-color: white;" text="e-mail" />
+           <!--  <TableColumn fx:id="select" prefWidth="137.0" text="Selection" /> -->
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

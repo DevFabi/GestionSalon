@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="statistiques" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatistiquesController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="14.0" layoutY="153.0" prefHeight="330.0" prefWidth="413.0" style="-fx-background-color: white;" title="Nombre de clients et de coiffeurs" />
+      <Button fx:id="bt_AccueilClient" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #9BB1E9;" text="Accueil" textFill="WHITE">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="19.0" />
+         </font>
+      </Button>
+      <BarChart fx:id="barChart" layoutX="446.0" layoutY="121.0" prefHeight="394.0" prefWidth="490.0" style="-fx-background-color: white;" title="Nombre de prestations par coiffeur">
+        <xAxis>
+          <CategoryAxis fx:id="cat" label="Nombre de prestations par coiffeur" side="TOP" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numb" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

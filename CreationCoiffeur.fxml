@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane_CreationCoiffeurs" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreationCoiffeurController">
+   <children>
+      <AnchorPane>
+         <children>
+            <AnchorPane fx:id="AnchorPane_CreationCoiffeurs" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #293847;">
+               <children>
+                  <Text fill="WHITE" layoutX="401.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coiffeurs">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="76.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nomCoiffeur" layoutX="346.0" layoutY="273.0" prefHeight="43.0" prefWidth="217.0" />
+                  <TextField fx:id="prenomCoiffeur" layoutX="632.0" layoutY="273.0" prefHeight="43.0" prefWidth="217.0" />
+                  <Text fill="WHITE" layoutX="346.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom : " wrappingWidth="72.13671875">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="632.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom : " wrappingWidth="90.13671875">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="26.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="bt_SuppressionCoiffeur" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#goSuppression" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #F785A5;" text="Suppression" textFill="WHITE">
+                     <font>
+                        <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bt_CreationCoiffeurCreation" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #F9ADC3;" text="Création" textFill="WHITE">
+                     <font>
+                        <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bt_AccueilCoiffeurCreation" layoutX="14.0" layoutY="168.0" mnemonicParsing="false" onAction="#goBack" prefHeight="93.0" prefWidth="217.0" style="-fx-background-color: #F785A5;" text="Accueil" textFill="WHITE">
+                     <font>
+                        <Font name="Champagne &amp; Limousines Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bt_ajouterCoiffeur" layoutX="719.0" layoutY="415.0" mnemonicParsing="false" onAction="#ajouterCoiffeur" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #F785A5;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Champagne &amp; Limousines" size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

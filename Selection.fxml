@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SelectionFont" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #293847;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectionController">
+   <children>
+   	  <Button fx:id="SelectionCreationClient" layoutX="25.0" layoutY="153.0" mnemonicParsing="false" onAction="#CreationClientPage" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #ECB771;" text="Création client" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font></Button>
+      <Button fx:id="SelectionNouvellePrestaEncaissement" layoutX="338.0" layoutY="153.0" mnemonicParsing="false" onAction="#NouvellePrestaEncaissement" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #7BE6E7;" text="Encaissement" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="SelectionCoiffeurs" layoutX="650.0" layoutY="153.0" mnemonicParsing="false" onAction="#CoiffeurPage" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #F785A5;" text="Coiffeurs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="SelectionClients" layoutX="25.0" layoutY="379.0" mnemonicParsing="false" onAction="#ClientPage" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #AFD676;" text="Clients" textFill="WHITE">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="SelectionPrestations" layoutX="338.0" layoutY="379.0" mnemonicParsing="false" onAction="#PrestationsPage" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #B884D1;" text="Prestations" textFill="WHITE">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="SelectionStatistiques" layoutX="650.0" layoutY="379.0" mnemonicParsing="false" onAction="#StatistiquePage" prefHeight="164.0" prefWidth="276.0" style="-fx-background-color: #9BB1E9;" text="Statistiques" textFill="WHITE">
+         <font>
+            <Font name="Champagne &amp; Limousines Bold" size="29.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="328.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion du salon" textAlignment="CENTER" wrappingWidth="294.13671875">
+         <font>
+            <Font name="GrandHotel-Regular" size="57.0" />
+         </font>
+      </Text>
+      
+   </children>
+</AnchorPane>
